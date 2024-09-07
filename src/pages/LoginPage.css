@@ -1,0 +1,143 @@
+/* font family Urbanist
+main #FCEA47
+black #000
+white #fff
+body #191919
+*/
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Urbanist, sans-serif;
+    background-color: #191919;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .imglogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .navbar-icon {
+    height: 40px;
+  }
+  
+  .go-to-website {
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: #ffeb3b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .go-to-website img {
+    margin-right: 8px;
+    height: 20px;
+  }
+  
+  /* Login Box */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .login-box {
+    background-color: black;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-box .logo {
+    width: 140px;
+  }
+  
+  .login-box h2 {
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    color: white;
+    text-align: left;
+    margin: 10px 0 5px;
+  }
+  
+  input {
+    padding: 10px;
+    background-color: #191919;
+    color: #ffffff;
+    border: 1px solid yellow;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #ffeb3b;
+    color: black;
+    border: none;
+    padding: 10px;
+    max-width: 150px;
+    min-width: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #ffc107;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .login-box {
+      width: 90%;
+    }
+  
+    .navbar {
+      padding: 10px;
+    }
+  
+    .go-to-website {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    .navbar-icon {
+      height: 30px;
+    }
+  }
+  
